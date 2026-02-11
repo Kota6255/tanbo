@@ -1,9 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "name": "tanbo-adviser-demo",
-  "buildCommand": null,
-  "outputDirectory": "demo",
-  "framework": null,
+  "installCommand": "cd demo && npm install",
+  "buildCommand": "cd demo && npm run build",
+  "outputDirectory": "demo/dist",
+  "framework": "vite",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
