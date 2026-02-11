@@ -1,0 +1,12 @@
+{
+  "advisories": [
+    {
+      "date": "2026-07-15",
+      "pest_name": "いもち病",
+      "advisory_level": "注意報",
+      "region": "広島県全域",
+      "message": "葉いもちの発生が平年より多い。防除徹底",
+      "source_url": "https://www.pref.hiroshima.lg.jp/soshiki/84/"
+    }
+  ]
+}

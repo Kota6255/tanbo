@@ -1,0 +1,70 @@
+{
+  "prefecture": "hiroshima",
+  "varieties": [
+    {
+      "name": "コシヒカリ",
+      "region": "平坦部",
+      "transplant_period": {"start": "06-01", "end": "06-15"},
+      "target_tiller_count": 22,
+      "midseason_drain": {
+        "trigger": "目標茎数の70-80%到達時",
+        "duration_days": {"min": 7, "max": 14},
+        "deadline": "出穂前30日まで"
+      },
+      "heading": {
+        "accumulated_temp_from_transplant": 1100,
+        "typical_date": "08-10"
+      },
+      "panicle_fertilizer": {
+        "timing": "出穂前18-15日",
+        "amount_n_kg_per_10a": 2.0,
+        "skip_condition": "いもち病多発時は中止"
+      },
+      "harvest": {
+        "accumulated_temp_from_heading": 1000,
+        "drain_before_days": {"min": 7, "max": 10}
+      },
+      "blast_resistance": "中"
+    },
+    {
+      "name": "ヒノヒカリ",
+      "region": "平坦部",
+      "transplant_period": {"start": "06-10", "end": "06-25"},
+      "target_tiller_count": 20,
+      "midseason_drain": {
+        "trigger": "目標茎数の70-80%到達時",
+        "duration_days": {"min": 7, "max": 14},
+        "deadline": "出穂前30日まで"
+      },
+      "heading": {
+        "accumulated_temp_from_transplant": 1200,
+        "typical_date": "08-25"
+      },
+      "harvest": {
+        "accumulated_temp_from_heading": 1000,
+        "drain_before_days": {"min": 7, "max": 10}
+      },
+      "blast_resistance": "やや強"
+    },
+    {
+      "name": "あきろまん",
+      "region": "平坦部〜中山間",
+      "transplant_period": {"start": "06-05", "end": "06-20"},
+      "target_tiller_count": 20,
+      "midseason_drain": {
+        "trigger": "目標茎数の70-80%到達時",
+        "duration_days": {"min": 7, "max": 14},
+        "deadline": "出穂前30日まで"
+      },
+      "heading": {
+        "accumulated_temp_from_transplant": 1150,
+        "typical_date": "08-15"
+      },
+      "harvest": {
+        "accumulated_temp_from_heading": 1000,
+        "drain_before_days": {"min": 7, "max": 10}
+      },
+      "blast_resistance": "中"
+    }
+  ]
+}

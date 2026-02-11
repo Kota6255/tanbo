@@ -1,0 +1,39 @@
+{
+  "stations": [
+    {
+      "id": "67437",
+      "name": "広島",
+      "latitude": 34.3981,
+      "longitude": 132.4594,
+      "elevation_m": 29.0
+    },
+    {
+      "id": "67511",
+      "name": "東広島",
+      "latitude": 34.4269,
+      "longitude": 132.7433,
+      "elevation_m": 227.0
+    },
+    {
+      "id": "67516",
+      "name": "呉",
+      "latitude": 34.2339,
+      "longitude": 132.5553,
+      "elevation_m": 3.0
+    },
+    {
+      "id": "67376",
+      "name": "三次",
+      "latitude": 34.8028,
+      "longitude": 132.8539,
+      "elevation_m": 163.0
+    },
+    {
+      "id": "67351",
+      "name": "庄原",
+      "latitude": 34.8547,
+      "longitude": 133.0208,
+      "elevation_m": 246.0
+    }
+  ]
+}
