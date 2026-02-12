@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip,
   ResponsiveContainer, Area, AreaChart, ReferenceLine,
@@ -852,6 +852,13 @@ export default function App() {
     leafColor: null, notes: null, date: null,
   });
   const [sprayLogs, setSprayLogs] = useState([]);
+  const emergencyAlert = "緊急アラート: 田んぼ付近でクマ出没";
+  const [showEmergencyAlert, setShowEmergencyAlert] = useState(true);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => setShowEmergencyAlert(false), 5000);
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   const pages = [
     { key: "dashboard", label: "ダッシュボード", icon: Icons.dashboard },
@@ -882,6 +889,22 @@ export default function App() {
           </div>
         </div>
       </div>
+
+      {showEmergencyAlert && (
+        <div style={{
+          margin: "10px 14px 0",
+          background: "#fff1f2",
+          border: "1px solid #fecdd3",
+          borderRadius: 10,
+          padding: "10px 12px",
+          color: "#9f1239",
+          fontSize: 13,
+          fontWeight: 700,
+          boxShadow: T.shadow,
+        }}>
+          {emergencyAlert}
+        </div>
+      )}
 
       {/* Content */}
       <div style={{ flex: 1, padding: 14, paddingBottom: 76, overflowY: "auto" }}>
